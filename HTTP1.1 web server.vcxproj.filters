@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="TCP Layer">
+      <UniqueIdentifier>{68e27928-2d08-4d3e-8d89-76c81ced2667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TCP Layer\TCP Socket">
+      <UniqueIdentifier>{117f9e9c-2b45-49f4-93ce-0ed966f03b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TCP Layer\TCP Connection">
+      <UniqueIdentifier>{491b6436-7608-4fd1-b3d9-2df680bd0fa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer">
+      <UniqueIdentifier>{3f35d1d6-6d1d-4313-b35c-1d15b9bdfbbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Parser">
+      <UniqueIdentifier>{8ca61a8a-bdd7-4236-8e7c-a4bee66586c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Parser\HTTP Headers">
+      <UniqueIdentifier>{4636ef94-196c-4de2-aff8-21db2ee695df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Parser\HTTP Body">
+      <UniqueIdentifier>{0fea1f3c-89b3-4849-a6a8-a032d7230269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Response">
+      <UniqueIdentifier>{eef649a6-1590-41a7-a44c-c9a38c35e046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Parser\State Machine">
+      <UniqueIdentifier>{e4212986-8a61-4f1b-bed7-164c861de2d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Parser\Stream Reader">
+      <UniqueIdentifier>{2e20e4ff-e90a-4448-b2ba-32e198419066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Response\Response">
+      <UniqueIdentifier>{dbf8a926-7244-4948-b97f-817c6c28e602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Response\Chunked Encoding">
+      <UniqueIdentifier>{c9881484-3926-464e-80c2-7ceb3c960323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Response\Router">
+      <UniqueIdentifier>{9aa79815-fa47-4282-abcc-5d79d4320fe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Parser\Request Lines">
+      <UniqueIdentifier>{ee82f291-c0ed-4362-bd1d-3d10aed98d3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Layer\HTTP Response\Binary data">
+      <UniqueIdentifier>{c10db8b0-2f85-4f57-b691-47d439b950b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TCP_Socket.cpp">
+      <Filter>TCP Layer\TCP Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="TCP_Connection.cpp">
+      <Filter>TCP Layer\TCP Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="Request Line.cpp">
+      <Filter>HTTP Layer\HTTP Parser\Request Lines</Filter>
+    </ClCompile>
+    <ClCompile Include="Transition.cpp">
+      <Filter>HTTP Layer\HTTP Parser\State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTP Header.cpp">
+      <Filter>HTTP Layer\HTTP Parser\HTTP Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="Stream Reader.cpp">
+      <Filter>HTTP Layer\HTTP Parser\Stream Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTP Body.cpp">
+      <Filter>HTTP Layer\HTTP Parser\HTTP Body</Filter>
+    </ClCompile>
+    <ClCompile Include="Response.cpp">
+      <Filter>HTTP Layer\HTTP Response\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="Chunk Encoding.cpp">
+      <Filter>HTTP Layer\HTTP Response\Chunked Encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="Router.cpp">
+      <Filter>HTTP Layer\HTTP Response\Router</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary Data.cpp">
+      <Filter>HTTP Layer\HTTP Response\Binary data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TCP_Socket.h">
+      <Filter>TCP Layer\TCP Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="TCP_Connection.h">
+      <Filter>TCP Layer\TCP Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="Request Line.h">
+      <Filter>HTTP Layer\HTTP Parser\Request Lines</Filter>
+    </ClInclude>
+    <ClInclude Include="Transition.h">
+      <Filter>HTTP Layer\HTTP Parser\State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTP Headers.h">
+      <Filter>HTTP Layer\HTTP Parser\HTTP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Stream Reader.h">
+      <Filter>HTTP Layer\HTTP Parser\Stream Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTP Body.h">
+      <Filter>HTTP Layer\HTTP Parser\HTTP Body</Filter>
+    </ClInclude>
+    <ClInclude Include="Response.h">
+      <Filter>HTTP Layer\HTTP Response\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="Chunked Encoding.h">
+      <Filter>HTTP Layer\HTTP Response\Chunked Encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="Router.h">
+      <Filter>HTTP Layer\HTTP Response\Router</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary Data.h">
+      <Filter>HTTP Layer\HTTP Response\Binary data</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
