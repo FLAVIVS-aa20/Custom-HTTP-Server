@@ -95,7 +95,14 @@ bool HTTPHeader::HeaderParser(vector<char>& cbytes)
 		return false;
 	}
 
-	string key = Trim(line.substr(0, colon_pos));
+	string key_delim = line.substr(0, colon_pos);
+	if (!key_delim.empty() && key_delim == " " || key_delim == "\t")
+	{
+		cout << "Unable HTTP Format Header!\n";
+		return false;
+	}
+
+	string key = Trim(key_delim);
 	string value = Trim(line.substr(colon_pos + 1));
 
 	if (key.empty())
